@@ -8,7 +8,7 @@ author:
   url: "https://pranjaldhole.github.io"
 
 # Build settings
-baseurl: /blog
+baseurl: /blog/
 source: .
 destination: ./_site
 permalink: /:title
