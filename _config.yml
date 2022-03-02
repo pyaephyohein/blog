@@ -1,7 +1,7 @@
 # Site settings
-title: mgou.dev/blog
+title: blog.mgou.dev
 description: "Blog site for mgou.dev pages."
-url: "https://pranjaldhole.github.io/science-blog-template"
+url: "https://blog.mgou.dev"
 author:
   name: "Pranjal Dhole"
   email: "dhole.pranjal@gmail.com"
@@ -10,7 +10,7 @@ maintainer:
   name: "Pyae Phyo Hein"
   email: "email@mgou.dev"
 # Build settings
-baseurl: /blog/
+baseurl: /
 source: .
 destination: ./_site
 permalink: /:title
