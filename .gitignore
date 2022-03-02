@@ -1,0 +1,9 @@
+.sass-cache
+.DS_Store
+_site
+node_modules
+.jekyll-cache/
+
+# Auxiliary directories
+build/
+debug/
