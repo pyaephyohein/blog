@@ -27,12 +27,12 @@ defaults:
       layout: "post"
 
 # Custom variables
-genre: "Science and Technology Blog" # Blog genre
-version: "1.0.1"    # Blog site version
+genre: "Tech and ရောက်တတ်ရာရာ" # Blog genre
+version: "1.0"    # Blog site version
 
 # Disqus comments
 comments: true      # used to enable disqus comments on site
-dsq_shortname: mgou.dev # disqus shortname
+dsq_shortname: blog.mgou.dev # disqus shortname
 
 # Options: Define which header/footer to use
 custom_header: false
