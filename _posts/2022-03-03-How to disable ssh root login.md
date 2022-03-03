@@ -18,4 +18,3 @@ PermitRootLogin no
 ```bash
 sudo systemctl restart sshd.service
 ```
-
