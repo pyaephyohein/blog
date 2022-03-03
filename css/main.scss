@@ -1,9 +1,0 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
-
-//Import
-@import "base", "mixin", "typography", "layout", "custom.scss";
-
-// Code snippet stylesheet
-@import "code_style_monokai";

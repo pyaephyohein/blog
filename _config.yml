@@ -1,44 +1,63 @@
 # Site settings
-title: blog.mgou.dev
-description: "Blog site for mgou.dev pages."
-url: "https://blog.mgou.dev"
-author:
-  name: "Pranjal Dhole"
-  email: "dhole.pranjal@gmail.com"
-  url: "https://pranjaldhole.github.io"
-maintainer:
-  name: "Pyae Phyo Hein"
-  email: "email@mgou.dev"
+title_left    : "Think"
+title_right   : "space" # default: ""
+description   : "Minimalist Jekyll theme for technical writing blog."
+keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+url           : https://heiswayi.github.io/thinkspace # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+google_analytics  : UA-XXXXX-XX
+twitter_username  : ""
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+postshare_enabled : false
+
 # Build settings
-baseurl: ./
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
 
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+source      : ./
+destination : ./_site
 
-# Custom variables
-genre: "Tech and ရောက်တတ်ရာရာ" # Blog genre
-version: "1.0"    # Blog site version
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
 
-# Disqus comments
-comments: true      # used to enable disqus comments on site
-dsq_shortname: blog.mgou.dev # disqus shortname
+# Author settings
+author:
+  name     : "John Doe"
 
-# Options: Define which header/footer to use
-custom_header: false
-custom_nav_footer: false
-reverse: false
-
-# Plugins
 plugins:
+  - jekyll-sitemap
+  - bourbon
   - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"
