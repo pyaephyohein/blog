@@ -9,7 +9,7 @@ keywords: "tech"
 <pre id="show-json-from-git"></pre>
 
 <script>
-var url = 'https://raw.githubusercontent.com/{gitAccount}/{publicGitRepo}/{branch}/{filename.json}';
+var url = 'https://raw.githubusercontent.com/cloudrouter/centos-repo/master/CentOS-Base.repo';
 fetch(url)
 .then(res => res.text())
 .then((out) => {
