@@ -9,7 +9,7 @@ keywords: "tech"
 <pre id="show-json-from-git"></pre>
 
 <script>
-var url = 'https://raw.githubusercontent.com/pyaephyohein/python-email/master/main.py';
+var url = 'https://raw.githubusercontent.com/{gitAccount}/{publicGitRepo}/{branch}/{filename.json}';
 fetch(url)
 .then(res => res.text())
 .then((out) => {
