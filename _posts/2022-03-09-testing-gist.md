@@ -6,4 +6,14 @@ description: "testing gist"
 keywords: "tech"
 ---
 
-<script src="https://gist.github.com/pyaephyohein/1d9ffca7e81c9c6d8d0f101f769f6aa9.js"></script>
+pre id="show-json-from-git"></pre>
+
+<script>
+var url = 'https://raw.githubusercontent.com/pyaephyohein/python-email/master/main.py';
+fetch(url)
+.then(res => res.text())
+.then((out) => {
+  document.getElementById("show-json-from-git").innerText = out
+})
+.catch(err => { throw err });
+</script>
