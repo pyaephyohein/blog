@@ -10,8 +10,8 @@ cover         : "https://avatars.githubusercontent.com/u/50148039?s=400&u=a8e96e
 google_analytics  : UA-XXXXX-XX
 twitter_username  : "pyaephyoheinn"
 comments_enabled  : true # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : "pyaephyoheinn"
-postshare_enabled : false
+disqus_shortname  : "mgou-dev-blog"
+postshare_enabled : true
 
 # Build settings
 permalink   : /:year/:title/
