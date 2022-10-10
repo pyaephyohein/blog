@@ -8,7 +8,7 @@ keywords: "git"
 
 
 
-###Git Config 
+### Git Config 
 
 
 ပထမဆုံး ```~/.gitconfig``` မှာ Folder path ပြင်ရပါမယ်။ ဘယ်လို ပြင်ရမလဲ ဆိုရင် သင့်မှာ work and personal ဆိုပြီး git account နှစ်ခု ရှိတယ်ဆိုပါစို့၊ work folder က Work နဲ့ သက်ဆိုင်တဲ့ folderဖြစ်ပြီး Project folder က Personal code တွေ သိမ်းဆည်းတဲ့ folder လို့ ယူဆ လိုက်ပါမယ်။  ပထမဆုံး ```.gitconfig-work``` နဲ့ ```.gitconfig-personal``` ဆိုပြီး အဆင်ပြေတဲ့ နေရာမှာ file နှစ်ခု တည်ဆောက်လိုက်ပါမယ်။ အဲ့ဒီ file နှစ်ခု ကို  ```.gitconfig``` ကနေ link ချိတ်ပါမယ်။ 
