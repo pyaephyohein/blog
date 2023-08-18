@@ -32,5 +32,6 @@ After you have copy the configuration, Let's start the helm template.
 ```bash 
 touch mychart/templates/example-configmap.yaml
 ```
+and than write down the template as follows.
 
 <script src="https://gist.github.com/pyaephyohein/da131a0844b3c6143a053626e5ab7806.js"></script>
