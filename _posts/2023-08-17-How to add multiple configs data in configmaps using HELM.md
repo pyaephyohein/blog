@@ -41,8 +41,8 @@ metadata:
   name: example-configmap
   annotations:
 data:
-  {{- range $path, $_ :=  .Files.Glob  "Configs/**" }}
-  {{ $path | trimPrefix "Configs/" }}: |-
-{{ $.Files.Get $path | indent 4 }}
-  {{ end }}
+  `{{- range $path, $_ :=  .Files.Glob  "Configs/**" }}`
+  `{{ $path | trimPrefix "Configs/" }}`: |-
+`{{ $.Files.Get $path | indent 4 }}`
+  `{{ end }}`
 ```
