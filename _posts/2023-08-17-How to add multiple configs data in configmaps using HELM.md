@@ -3,7 +3,7 @@ layout: post
 title: "How to add Multiple configs data in configmap using HELM."
 comments: true
 description: "How to add Multiple configs data in configmap using HELM."
-keywords: "helm", "configmap", "kubernetes"
+keywords: "helm,kubernetes,configmap,devops"
 ---
 
 ### Create config folder for multiple configurations files
