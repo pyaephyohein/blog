@@ -3,7 +3,7 @@ title_left    : "mgou.dev"
 # title_right   : "dev" # default: ""
 description   : "MgOu's Personal Blog"
 keywords      : "MgOu"
-url           : https://pyaephyohein.github.io/blog # site url
+url           : https://blog.mgou.dev # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "https://avatars.githubusercontent.com/u/50148039?s=400&u=a8e96e747b46c16fd936b193845cb1dcfa03090e&v=4" # image uri like logo/cover image for site seo
 
