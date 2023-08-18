@@ -34,7 +34,7 @@ After you have copy the configuration, Let's start the helm template.
 touch mychart/templates/example-configmap.yaml
 ```
 
-```yaml
+```
 kind: ConfigMap
 apiVersion: v1
 metadata:
