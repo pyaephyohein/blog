@@ -30,20 +30,7 @@ Next, copy the configuration files you want to the ```Configs``` folder.
 
 After you have copy the configuration, Let's start the helm template. 
 ```bash 
-
 touch mychart/templates/example-configmap.yaml
 ```
 
-
-```yaml:
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: example-configmap
-  annotations:
-data:
-  {{- range $path, $_ :=  .Files.Glob  "Configs/**" }}
-  {{ $path | trimPrefix "Configs/" }}: |-
-{{ $.Files.Get $path | indent 4 }}
-  {{ end }}
-```
+<script src="https://gist.github.com/pyaephyohein/da131a0844b3c6143a053626e5ab7806.js"></script>
