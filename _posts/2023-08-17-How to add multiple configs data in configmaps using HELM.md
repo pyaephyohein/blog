@@ -46,5 +46,5 @@ data:
   {{ $path | trimPrefix "Configs/" }}: |-
 {{ $.Files.Get $path | indent 4 }}
   {{ end }}
-``````
+```
 <article>
