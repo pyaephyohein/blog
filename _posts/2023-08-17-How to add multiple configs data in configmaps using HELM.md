@@ -34,6 +34,7 @@ After you have copy the configuration, Let's start the helm template.
 touch mychart/templates/example-configmap.yaml
 ```
 
+<article>
 ```
 kind: ConfigMap
 apiVersion: v1
@@ -41,8 +42,9 @@ metadata:
   name: example-configmap
   annotations:
 data:
-  `{{- range $path, $_ :=  .Files.Glob  "Configs/**" }}`
-  `{{ $path | trimPrefix "Configs/" }}`: |-
-`{{ $.Files.Get $path | indent 4 }}`
-  `{{ end }}`
-```
+  {{- range $path, $_ :=  .Files.Glob  "Configs/**" }}
+  {{ $path | trimPrefix "Configs/" }}: |-
+{{ $.Files.Get $path | indent 4 }}
+  {{ end }}
+``````
+<article>
