@@ -105,7 +105,7 @@ aws:
     ## Before external-dns 0.5.9 home dir should be `/root/.aws`
     ##
 ```
-```you can also use kubernetes secret``` if you don't want to add in vaule.yaml
+```you can also use kubernetes secret``` if you don't want to add the AWS secrets in vaules.yaml
 and than you can use any method to Deploy. I used Argocd.
 <br>
 <img src="/assets/images/extdnsargocd.png">
