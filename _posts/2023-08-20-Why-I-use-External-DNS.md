@@ -20,11 +20,11 @@ I will use my domain ```test.mgou.dev```for this example.
 <br>
 Please create Hosted Zone in route53.
 <br>
-![Alt text](../assets/images/aws-hosted-zone-test.png)
+<img src="./assets/images/aws-hosted-zone-test.png">
 <br>
 You need to create AWS POLICY with following JSON. 
 <br>
-```json
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ You can also allow permission only one dns zone per account. But I just used one
 <br>
 Create IAM account and attache above Permission. 
 <br>
-<img src="../assets/images/extdnsuser+policy.png">
+<img src="./assets/images/extdnsuser+policy.png">
 <br>
 <br>
 And Than please create AWS ACCESS KEY and SECRET. And Note this Key and Secret. 
@@ -106,25 +106,25 @@ aws:
 ```you can also use kubernetes secret``` if you don't want to add in vaule.yaml
 and than you can use any method to Deploy. I used Argocd.
 <br>
-<img src="../assets/images/extdnsargocd.png">
+<img src="./assets/images/extdnsargocd.png">
 <br><br>
 So let's Test. I have to test vault. So I just deploy the Vault with ingress ```vault.test.mgou.dev```. 
 <br>
-<img src="../assets/images/vaultargocd.png">
+<img src="./assets/images/vaultargocd.png">
 <br><br>
 After Deploy Vault Let's check External DNS logs. It said successfully updated.
 <br>
-<img src="../assets/images/extdnslogs.png">
+<img src="./assets/images/extdnslogs.png">
 <br>
 <br>
 Let's check DNS records in Route 53. They are created. Vaule will be ingress class's loadbalancer address. 
 <br>
-<img src="../assets/images/extdnsrecords.png">
+<img src="./assets/images/extdnsrecords.png">
 <br>
 <br>
 Now we can access to vault Home Page. with ```vault.test.mgou.dev```
 <br>
-<img src="../assets/images/vaulthome.png">
+<img src="./assets/images/vaulthome.png">
 <br>
 <br>
 Next week, Let's test with Cloudflare.
