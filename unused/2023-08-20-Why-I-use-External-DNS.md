@@ -17,12 +17,13 @@ In this example, I will show you with helm and argocd. so you can use other tool
 <br>
 I will use my domain ```test.mgou.dev```for this example. 
 <br>
+<br>
 Please create Hosted Zone in route53.
-
+<br>
 <img src="../assets/images/aws-hosted-zone-test.png">
 <br>
 You need to create AWS POLICY with following JSON. 
-
+<br>
 ```json
 {
   "Version": "2012-10-17",
@@ -61,15 +62,18 @@ You need to create AWS POLICY with following JSON.
 ```
 You can also permission only one dns zone per account. But I just used one account for all zone for this example. 
 <br>
+<br>
 Create IAM account and attache above Permission. 
+<br>
 <img src="../assets/images/extdnsuser+policy.png">
-
+<br>
+<br>
 And Than please create AWS ACCESS KEY and SECRET. And Note this Key and Secret. 
 
 So finished the aws part. Next is External DNS HELM. Let's prepare!.
 
 I will use Argocd and Own Git REPO. I assume you already know these parts.
-
+<br>
 Add Bitnami Helm Repo 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -83,7 +87,9 @@ Extract Pulled package.
 tar -xzf external-dns-6.23.6.tgz
 ```
 <br>
+<br>
 let's update helm value.yaml. Update this block in value.yaml. 
+<br>
 ```yaml
 aws:
   ## AWS credentials
@@ -99,20 +105,26 @@ aws:
 ```
 ```you can also use kubernetes secret``` if you don't want to add in vaule.yaml
 and than you can use any method to Deploy. I used Argocd.
-
+<br>
 <img src="../assets/images/extdnsargocd.png">
-
+<br><br>
 So let's Test. I have to test vault. So I just deploy the Vault with ingress ```vault.test.mgou.dev```. 
-
+<br>
 <img src="../assets/images/vaultargocd.png">
-
+<br><br>
 After Deploy Vault Let's check External DNS logs. It said successfully updated.
 <br>
 <img src="../assets/images/extdnslogs.png">
+<br>
+<br>
 Let's check DNS records in Route 53. They are created. Vaule will be ingress class's loadbalancer address. 
+<br>
 <img src="../assets/images/extdnsrecords.png">
-
+<br>
+<br>
 Now we can access to vault Home Page. with ```vault.test.mgou.dev```
+<br>
 <img src="../assets/images/vaulthome.png">
-
+<br>
+<br>
 Next week, Let's test with Cloudflare.
