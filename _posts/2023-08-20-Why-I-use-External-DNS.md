@@ -60,7 +60,7 @@ You need to create AWS POLICY with following JSON.
   ]
 }
 ```
-You can also permission only one dns zone per account. But I just used one account for all zone for this example. 
+You can also allow permission only one dns zone per account. But I just used one account for all zone for this example. 
 <br>
 <br>
 Create IAM account and attache above Permission. 
