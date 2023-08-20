@@ -124,10 +124,11 @@ So let's Test. I have to test vault. So I just deploy the Vault with ingress ```
         paths: []
     extraPaths: []
 ```
+And Deployed with ArgoCD.
 <br>
 <img src="/assets/images/vaultargocd.png">
 <br><br>
-After Deploy Vault Let's check External DNS logs. It said successfully updated.
+After Deploy Vault Let's check External DNS's logs. It said successfully updated.
 <br>
 <img src="/assets/images/extdnslogs.png">
 <br>
