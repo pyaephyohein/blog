@@ -1,0 +1,7 @@
+---
+layout: post
+title: "SSL Certificate with Let's Encrypt and Cert-Manager in K8s"
+comments: true
+description: "How to Download or Use This Theme"
+keywords: "kubernetes, helm, let's Encrypt, SSL, Cert-Manager"
+---
