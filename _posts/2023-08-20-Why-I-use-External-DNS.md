@@ -90,7 +90,7 @@ tar -xzf external-dns-6.23.6.tgz
 ```
 <br>
 <br>
-let's update helm value.yaml. Update this block in value.yaml. 
+let's update helm values.yaml. Update this block in values.yaml. 
 <br>
 ```yaml
 aws:
@@ -110,7 +110,20 @@ and than you can use any method to Deploy. I used Argocd.
 <br>
 <img src="/assets/images/extdnsargocd.png">
 <br><br>
-So let's Test. I have to test vault. So I just deploy the Vault with ingress ```vault.test.mgou.dev```. 
+So let's Test. I have to test vault. So I just deploy the Vault with ingress ```vault.test.mgou.dev```. I assume you already know these parts. Update the vault's vaules.yaml.
+```yaml
+  ingress:
+    enabled: true
+    labels: {}
+    annotations: {}
+    ingressClassName: "nginx"
+    pathType: Prefix
+    activeService: true
+    hosts:
+      - host: vault.test.mgou.dev
+        paths: []
+    extraPaths: []
+```
 <br>
 <img src="/assets/images/vaultargocd.png">
 <br><br>
