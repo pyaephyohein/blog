@@ -14,6 +14,12 @@ A Year ago. I had to add too may dns record by myself to DNS Server. So I think 
 ### How it works.
 External DNS is great tools for Kubernetes ingress. It can be used to automatically create DNS records when deploy ingress in Kubernetes Cluster.Add Ingress class's loadbalancer address as A record's value. So let's start with a simple example. 
 
+### Pre - Request
+- aws cloud practitioner level
+- helm basic level 
+- argocd basic level
+- kubernetes basic level
+
 ### Example with Route 53. 
 In this example, I will show you with helm and argocd. so you can use other tools and IaC like terraform.
 <br>
