@@ -7,7 +7,7 @@ keywords: "kubernetes, helm, DNS, Route53, Cloudflare, Cloud Native"
 ---
 
 ### Why I use External DNS
-A Year ago. I had to add too may dns record by myself to DNS Server. So I think how to add dns record automtacally.I created bash script and run with cron every 5s. It is ok at On-premise. But not for cloud services. So I google "How can I add DNS record blah blah". Finally, I found External DNS .I started using External DNS for the first time. It is easy to manage the DNS Records on the AWS's Route 53, and other DNS services like Cloudflare and so on. You don't have to worry about creating too many DNS records by yourself :P.
+A Year ago. I had to add too may dns record by myself to DNS Server. So I think how to add dns record automatically.I created bash script and run with cron every 5s. It is ok at On-premise. But not for cloud services. So I google "How can I add DNS record blah blah". Finally, I found External DNS .I started using External DNS for the first time. It is easy to manage the DNS Records on the AWS's Route 53, and other DNS services like Cloudflare and so on. You don't have to worry about creating too many DNS records by yourself :P.
 <br>
 <img src="/assets/images/external-dns.png" width="400" high="400">
 
