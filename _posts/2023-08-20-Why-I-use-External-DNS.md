@@ -134,7 +134,7 @@ And Deployed with ArgoCD.
 <br>
 <img src="/assets/images/vaultargocd.png">
 <br><br>
-After Deploy Vault Let's check External DNS's logs. It said successfully updated.
+After Deploy Vault Let's check External DNS Pod's logs. It said successfully updated.
 <br>
 <img src="/assets/images/extdnslogs.png">
 <br>
