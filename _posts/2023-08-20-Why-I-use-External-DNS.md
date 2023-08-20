@@ -20,7 +20,7 @@ I will use my domain ```test.mgou.dev```for this example.
 <br>
 Please create Hosted Zone in route53.
 <br>
-<img src="../assets/images/aws-hosted-zone-test.png">
+![Alt text](../assets/images/aws-hosted-zone-test.png)
 <br>
 You need to create AWS POLICY with following JSON. 
 <br>
