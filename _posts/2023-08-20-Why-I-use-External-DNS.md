@@ -8,6 +8,7 @@ keywords: "kubernetes, helm, DNS, Route53, Cloudflare, Cloud Native"
 
 ### Why I use External DNS
 Last years ago, I started using External DNS for the first time. It was easy to manage the DNS Records on the AWS's Route 53, and other DNS services like Cloudflare and so on. You don't have to worry about creating too many DNS records by yourself :P.
+<br>
 <img src="/assets/images/external-dns.png" width="400" high="400">
 
 ### How it works.
