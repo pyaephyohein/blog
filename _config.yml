@@ -7,7 +7,7 @@ url           : https://blog.mgou.dev # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "https://avatars.githubusercontent.com/u/50148039?s=400&u=a8e96e747b46c16fd936b193845cb1dcfa03090e&v=4" # image uri like logo/cover image for site seo
 
-google_analytics  : G-NW0435DC75
+google_analytics  : "G-NW0435DC75"
 twitter_username  : "pyaephyoheinn"
 comments_enabled  : true # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : "mgou-dev-blog"
