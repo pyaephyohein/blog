@@ -32,11 +32,11 @@ Team ဆောက်ပြီးပြီဆိုတော့ Oauth Apps ဆီ
 
 အောက်က ပုံမှာလို မြင်ရပါလိမ့်မယ်။ လိုအပ်တာတွေဖြည့်လိုက်ပါ.
 
-![Oauth Register](/assets/images/argocdsso/oauthreg.png)
+![Alt text](/assets/images/argocdsso/oauthreg.png)
 
 Client Secret Generate လိုက်ပြီး ထွက်လာတဲ့ secret key ကို save ထားလိုက်ပါ Argo-CD ဖက်မှာ ပြန်သုံးရမှာပါ။ 
 
-![Generate Client Secret](/assets/images/argocdsso/clientsctgen.png)
+![Alt text](/assets/images/argocdsso/clientsctgen.png)
 
 
 GitHub အပိုင်းကတော့ ပြီးသွားပါပြီ
