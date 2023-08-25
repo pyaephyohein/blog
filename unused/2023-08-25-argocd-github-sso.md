@@ -62,6 +62,11 @@ cd argo-cd
 
 ဘယ်နေရာတွေမှာ ပြင်ပေးရမလဲ ဆိုရင်။ အရင်ဆုံး values.yaml ထဲ dex: ကို enable:true လုပ်ပေးရပါမယ်။
 
+server အောက်က url ကို လည်း update လုပ်ပေးရပါမယ်
+```yaml
+server:
+  url : http://your-argocd-url
+  ```
 secret အောက်က extra မှာ client secret အတွက် secret ထည့်ပေးရပါမယ်။
 ```yaml
 extra:
