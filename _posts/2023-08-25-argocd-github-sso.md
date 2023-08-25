@@ -23,14 +23,23 @@ Organization
     | -- developer1
 
 ```
-Link ကိုတော့ ဒီလို သွားလို့ရပါတယ် ```https://github.com/orgs/your-org-name-here/teams```
+Link ကိုတော့ ဒီလို သွားလို့ရပါတယ် 
+
+```
+https://github.com/orgs/your-org-name-here/teams
+```
 
 Team ဆောက်ပြီးပြီဆိုတော့ Oauth Apps ဆီကို ဆက်သွားရအောင်. 
-```Organization setting > Developer Settings > Oauth Apps > New Org Oauth Apps```
+
+```
+Organization setting > Developer Settings > Oauth Apps > New Org Oauth Apps
+```
 
 အောက်က link မှာလည်း organization name အစားထိုးပြီး သွားလို့ရပါတယ်.
 
-```https://github.com/organizations/your-org-name-here/settings/applications/new```
+```
+https://github.com/organizations/your-org-name-here/settings/applications/new
+```
 
 အောက်က ပုံမှာလို မြင်ရပါလိမ့်မယ်။ လိုအပ်တာတွေဖြည့်လိုက်ပါ.
 
