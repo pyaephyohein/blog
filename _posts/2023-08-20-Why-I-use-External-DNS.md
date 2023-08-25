@@ -2,7 +2,7 @@
 layout: post
 title: "Why I use External DNS"
 comments: true
-description: "How to Download or Use This Theme"
+description: "why I use external DNS"
 keywords: "kubernetes, helm, DNS, Route53, Cloudflare, Cloud Native"
 ---
 
