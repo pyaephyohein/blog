@@ -180,9 +180,9 @@ App ကို Deploy ပြီး ingress url ကို browser မှာ ခေ
 
 <img src="/assets/images/letencrypt-certmgr/image-3.png">
 
-***ကျွန်တော်တို့ lets encrypt သုံးတဲ့အခါ Local DNS က အဆင်မပြေပါဘူး lets encrypt က A, AAAA record တွေစစ်တဲ့အခါ မတွေတော့ secret ကို issue မပေးတာမျိုးတွေကြုံရပါတယ်။ ကျွန်တော့ Local environment မှာမရတာမျိုးလည်း ဖြစ်ချင်ဖြစ်မှာပေါ့ :3။  Record ကို Cloud service တစ်ခုခု Route53, CloudFlare နဲ့ တစ်ခြား DNS service တွေနဲ့ဆိုလျှင်တော့ အဆင်ပြေပါတယ်။***
+***ကျွန်တော်တို့ lets encrypt သုံးတဲ့အခါ Local DNS က အဆင်မပြေပါဘူး lets encrypt က A, AAAA record တွေစစ်တဲ့အခါ မတွေ့တော့ secret ကို issue မပေးတာမျိုးတွေကြုံရပါတယ်။ ကျွန်တော့ Local environment မှာမရတာမျိုးလည်း ဖြစ်ချင်ဖြစ်မှာပေါ့ :3။  Record ကို Cloud service တစ်ခုခု Route53, CloudFlare နဲ့ တစ်ခြား DNS service တွေနဲ့ဆိုလျှင်တော့ အဆင်ပြေပါတယ်။***
 
 
 ***Ref*** 
-https://letsencrypt.org/docs/
-https://cert-manager.io/docs/tutorials/acme/nginx-ingress/
+[Let's Encrypt Docs](https://letsencrypt.org/docs/)
+[Cert-manager Tutorial](https://cert-manager.io/docs/tutorials/acme/nginx-ingress/)
