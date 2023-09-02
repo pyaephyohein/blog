@@ -130,7 +130,7 @@ ingress:
   tls:
   - secretName: hello-app-secret
     hosts:
-    - hellomgou.dev
+    - hello.mgou.dev
 ```
 ကျွန်တော်ကတော့ argocd နဲ့ deploy လုပ်လိုက်ပါတယ် အဲ့တော့ တစ်ခုချင်းပြနေရင် ကြာမှာမို့ ဒီအဆင့်ကို သိကြမယ်ထင်လို့ ကျော်လိုက်ပါမယ် :P
 
