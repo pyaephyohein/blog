@@ -12,7 +12,7 @@ keywords: "kubernetes, helm, let's Encrypt, SSL, Cert-Manager"
 <img src="/assets/images/letencrypt-certmgr/cert_let.png">
 
 ### Deploy Cert-manager
-အဲ့တော့ ပထမဆုံး ကျွန်တော်တို့ Cert-manager deployment လုပ်ကြမယ်။ Cert-manger ကိုတော့ helm သုံးပြီး deploy လုပ်ကြပါမယ်။
+အဲ့တော့ ပထမဆုံး ကျွန်တော်တို့ Cert-manager deployment လုပ်ကြမယ်။ Cert-manager ကိုတော့ helm သုံးပြီး deploy လုပ်ကြပါမယ်။
 
 ```bash
 helm repo add jetstack https://charts.jetstack.io
@@ -88,7 +88,7 @@ spec:
 ```bash
 kubectl apply -f letencrypt-clusterissuer-prod.yaml
 ```
-***Optional: Cert-manager deploy တဲ့အချိန် တစ်ခါထဲပါသွားချင်ရင်တော့ ```helm pull ```ပြီး အထက်က  Definition Files တွေကို Cert-manager Chart ရဲ့ Templates Directory ထဲ ထည့်ပေးလိုက်ပြီး ```helm install``` လိုက်ရင် ရပါပြီ။ ```apiVersion: cert-manager.io/v1``` က CustomResources ဖြစ်တဲ့အတွက် cert-manger တစ်ခုလုံး helm install ပြီးမှ ClusterIssuer add လို့ရမှာဖြစ်တဲ့အတွက် helm post-install annotation ကြေညာပေးဖို့ လိုပါတယ် မဟုတ်ရင် unknown resource error တတ်ပါလိမ့်မယ်။***
+***Optional: Cert-manager deploy တဲ့အချိန် တစ်ခါထဲပါသွားချင်ရင်တော့ ```helm pull ```ပြီး အထက်က  Definition Files တွေကို Cert-manager Chart ရဲ့ Templates Directory ထဲ ထည့်ပေးလိုက်ပြီး ```helm install``` လိုက်ရင် ရပါပြီ။ ```apiVersion: cert-manager.io/v1``` က CustomResources ဖြစ်တဲ့အတွက် cert-manager တစ်ခုလုံး helm install ပြီးမှ ClusterIssuer add လို့ရမှာဖြစ်တဲ့အတွက် helm post-install annotation ကြေညာပေးဖို့ လိုပါတယ် မဟုတ်ရင် unknown resource error တတ်ပါလိမ့်မယ်။***
 ```yaml
 annotations:
       "helm.sh/hook": post-install
@@ -135,7 +135,7 @@ ingress:
 ကျွန်တော်ကတော့ argocd နဲ့ deploy လုပ်လိုက်ပါတယ် အဲ့တော့ တစ်ခုချင်းပြနေရင် ကြာမှာမို့ ဒီအဆင့်ကို သိကြမယ်ထင်လို့ ကျော်လိုက်ပါမယ် :P
 
 
-Deploy ပြီးတဲ့အခါ cm-acme-http-solver ဆိုပြီး pod တစ်ခုက Certificate request ဖို့နဲ့ cert-manger နဲ့ သက်ဆိုင်ရာ အလုပ်တွေလုပ်ဖို့ တက်လာပါလိမ့်မယ်။
+Deploy ပြီးတဲ့အခါ cm-acme-http-solver ဆိုပြီး pod တစ်ခုက Certificate request ဖို့နဲ့ cert-manager နဲ့ သက်ဆိုင်ရာ အလုပ်တွေလုပ်ဖို့ တက်လာပါလိမ့်မယ်။
 
 <img src="/assets/images/letencrypt-certmgr/image.png">
 
