@@ -8,7 +8,9 @@ keywords: "kubernetes, helm, let's Encrypt, SSL, Cert-Manager"
 
 ### Intro
 ဒီတစ်ပတ်မှာတော့ let's encrypt နဲ့ cert-manager ကို တွဲသုံးပြီး ဘယ်လိုမျိုး SSL သုံးလို့ ရမလဲဆိုတာ စမ်းကြည့်ကြမယ်ဗျို့။ ပုံမှန်ဆိုရင် Self-signed certificate ကို သုံးတတ်ကြပေမဲ့ certificate ထုတ်ရတာ ပျင်းတာပဲ ဖြစ်ဖြစ် ဒီတိုင်း စမ်းကြည့်ချင်တာပဲ ဖြစ်ဖြစ် organization က သုံးချင်တာပဲ ဖြစ်ဖြစ် lets encrypt ကို clusterissure အဖြစ် သုံးပြီး certificate request ပြီးသုံးကြတယ်ပေါ့။
+
 <img src="/assets/images/letencrypt-certmgr/cert_let.png">
+
 ### Deploy Cert-manager
 အဲ့တော့ ပထမဆုံး ကျွန်တော်တို့ Cert-manager deployment လုပ်ကြမယ်။ Cert-manger ကိုတော့ helm သုံးပြီး deploy လုပ်ကြပါမယ်။
 
@@ -86,8 +88,7 @@ spec:
 ```bash
 kubectl apply -f letencrypt-clusterissuer-prod.yaml
 ```
-***Optional***
-Cert-manager deploy တဲ့အချိန် တစ်ခါထဲပါသွားချင်ရင်တော့ ```helm pull ```ပြီး အထက်က  Definition Files တွေကို Cert-manager Chart ရဲ့ Templates Directory ထဲ ထည့်ပေးလိုက်ပြီး ```helm install``` လိုက်ရင် ရပါပြီ။ ```apiVersion: cert-manager.io/v1``` က CustomResources ဖြစ်တဲ့အတွက် cert-manger တစ်ခုလုံး helm install ပြီးမှ ClusterIssuer add လို့ရမှာဖြစ်တဲ့အတွက် helm post-install annotation ကြေညာပေးဖို့ လိုပါတယ် မဟုတ်ရင် unknown resource error တတ်ပါလိမ့်မယ်။
+***Optional: Cert-manager deploy တဲ့အချိန် တစ်ခါထဲပါသွားချင်ရင်တော့ ```helm pull ```ပြီး အထက်က  Definition Files တွေကို Cert-manager Chart ရဲ့ Templates Directory ထဲ ထည့်ပေးလိုက်ပြီး ```helm install``` လိုက်ရင် ရပါပြီ။ ```apiVersion: cert-manager.io/v1``` က CustomResources ဖြစ်တဲ့အတွက် cert-manger တစ်ခုလုံး helm install ပြီးမှ ClusterIssuer add လို့ရမှာဖြစ်တဲ့အတွက် helm post-install annotation ကြေညာပေးဖို့ လိုပါတယ် မဟုတ်ရင် unknown resource error တတ်ပါလိမ့်မယ်။***
 ```yaml
 annotations:
       "helm.sh/hook": post-install
@@ -139,10 +140,15 @@ Deploy ပြီးတဲ့အခါ cm-acme-http-solver ဆိုပြီး 
 <img src="/assets/images/letencrypt-certmgr/image.png">
 
 အဲ့ဒီ Pod ကို ကြည့်ရင် Certificate request တာတွေကို တွေ့ရပါလိမ့်မယ် Cert-manager ရဲ့ Pod နဲ့ တွဲကြည့်ရင် အပြန်အလှမ်အလုပ်လုပ်တဲ့ Log တွေကို တွေ့ရပါလိမ့်မယ်
+
 <img src="/assets/images/letencrypt-certmgr/image-1.png">
+
 အဆင်ပြေသွားပြီဆိုရင် Pod က delete သွားပါလိမ့်မယ်။ ကျွန်တော်တို့ browser မှာ ingress url ကို ခေါ်ကြည့်လိုက်ရင် hello world pageကို မြင်ရမှာဖြစ်ပါတယ်။ 
+
 <img src="/assets/images/letencrypt-certmgr/image-5.png">
+
 Certificate ကို ကြည့်ကြည့်မယ်ဆိုရင် အောက်ပါအတိုင်း lets encrypt ရဲ့ Staging Certificate ကို ရနေတာမြင်ရပါမယ်။
+
 <img src="/assets/images/letencrypt-certmgr/image-2.png">
 
 Prod ကို မသွားခင် Lets encrypt ရဲ့ Rate Limit တွေ အကြောင်းကို [Staging](https://letsencrypt.org/docs/staging-environment/) နဲ့ [Prod](https://letsencrypt.org/docs/rate-limits/) မှာ ဖတ်ကြည့်လို့ ရပါတယ်
@@ -167,6 +173,7 @@ ingress:
     - hello-prod.mgou.dev
 ```
 App ကို Deploy ပြီး ingress url ကို browser မှာ ခေါ်ကြည့်ရင် home page ကိုမြင်ရမှာ ဖြစ်ပြီး certificate ကို ကြည့်ရင်တော့ lets encrypt ရဲ့ Prod Certificate ကို မြင်ရမှာဖြစ်ပါတယ်
+
 <img src="/assets/images/letencrypt-certmgr/image-4.png">
 
 အောက်ပါ message ကတော့ prod certificate ကို တစ်နေ့ထဲမှာ multiple request လုပ်လိုက်လို့ Rate limit ထိတဲ့ error ပါ။ 
