@@ -3,7 +3,8 @@ layout: post
 title: "How to Disable SSH root login"
 comments: true
 description: "How to disable ssh root login"
-keywords: "dummy content"
+keywords: "ssh, linux"
+author: Pyae Phyo Hein
 ---
 
 ### Configure, disable ssh root login.

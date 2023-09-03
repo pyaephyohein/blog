@@ -4,6 +4,7 @@ title: "Why I use External DNS"
 comments: true
 description: "why I use external DNS"
 keywords: "kubernetes, helm, DNS, Route53, Cloudflare, Cloud Native"
+author: Pyae Phyo Hein
 ---
 
 ### Why I use External DNS

@@ -4,6 +4,7 @@ title: "How to Setup Time Zone in  Linux"
 comments: true
 description: "How to Setup Time Zone in Linux"
 keywords: "tech"
+author: Pyae Phyo Hein
 ---
 
 ### Configure, disable ssh root login.

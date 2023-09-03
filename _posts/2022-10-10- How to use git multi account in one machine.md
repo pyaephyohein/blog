@@ -4,6 +4,7 @@ title: "How to use git multi account in one machine."
 comments: true
 description: "How to use git multi account in one machine."
 keywords: "git"
+author: Pyae Phyo Hein
 ---
 
 
