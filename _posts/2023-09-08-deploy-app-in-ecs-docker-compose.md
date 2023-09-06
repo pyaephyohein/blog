@@ -11,6 +11,10 @@ Hello, One Week again!, Let's Deploy App in ECS. If you want to test your app or
 
 ***Docker Compose's integration for ECS and ACI will be retired in November 2023. You can use [compose-ecs](https://github.com/docker/compose-ecs)but I will use docker compose for now***
 
+<img src="/assets/images/ecs-dockercompose/dockerecs.jpg">
+
+#### Prepare Docker context
+
 Firstly, you need to crate `docker context`, I will show step by step.
 
 ```bash
@@ -45,9 +49,13 @@ Current context is now "aws-ecs"
 ```
 So, you can use this context. Let's try!. You can use your own app or my docker app. 
 
+#### Prepare Docker Compose
+
 ```bash
 git clone git@github.com:pyaephyohein/helloworld.git
 ```
+#### Deploy 
+
 ```bash
 cd helloworld
 ```
