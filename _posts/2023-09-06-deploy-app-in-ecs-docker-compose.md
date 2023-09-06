@@ -30,9 +30,9 @@ I will create new key and secret. If you already have aws profile you can use ``
 Please fill with your AWS secret and token credentials. now you have finished creating docker context. let's check that. 
 ```bash
 docker context ls
-
-
-
+```
+It will show like that.
+```bash
 NAME                TYPE                DESCRIPTION                               DOCKER ENDPOINT                                      KUBERNETES ENDPOINT   ORCHESTRATOR
 default             moby                Current DOCKER_HOST based configuration   unix:///var/run/docker.sock
 desktop-linux *     moby                Docker Desktop                            unix:///Users/pyaephyohein/.docker/run/docker.sock
@@ -100,7 +100,7 @@ After finished you can delete with following command.
 ```bash
 docker compose down
 ```
-If Above command too slow, you can delete in aws console :3 ***don't stop docker compose down***. 
+If Above command is too slow, you can delete in aws console :3 ***don't stop docker compose down***. 
 
 ***If you build docker image in mac ( M1, M2) please add -- platform ,```FROM --platform=linux/amd64 baseimage:tag```in ```Dockerfile```, If not you will face exec error.***
 
