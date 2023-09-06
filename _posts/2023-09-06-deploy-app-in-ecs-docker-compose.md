@@ -20,7 +20,7 @@ Firstly, you need to crate `docker context`, I will show step by step.
 ```bash
 docker context create aws-ecs
 ```
-I will create new key and secret. If you already have aws profile you can use ```An existing AWS Profile``` or You can expose variables to use ```AWS environment variables``` 
+I need to ceate new key and secret. If you already have aws profile you can use ```An existing AWS Profile``` or You can expose variables to use ```AWS environment variables``` 
 ```bash
 ? Create a Docker context using:  [Use arrows to move, type to filter]
   An existing AWS profile
