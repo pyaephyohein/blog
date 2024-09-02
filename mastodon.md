@@ -12,23 +12,6 @@ permalink: /mastodon/
     * {
       box-sizing: border-box;
     }
-    .link {
-    color: gray;
-    padding-bottom: .05em;
-    @include transition(border 300ms linear);
-    &:hover,
-    &:focus,
-    &:active 
-    }
-    .post-link {
-      &:hover,
-      &:focus,
-      &:active {
-        color: gray;
-      }
-    .page a{
-      padding-bottom: .05em;
-    }
     .dummy-main-container {
       display: flex;
       flex-direction: row;
