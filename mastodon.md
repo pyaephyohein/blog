@@ -12,16 +12,6 @@ permalink: /mastodon/
     * {
       box-sizing: border-box;
     }
-    html {
-      height: 100%;
-      font-size: 14px;
-    }
-    body {
-      height: 100%;
-      background: lightgray;
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-    }
     .dummy-main-container {
       display: flex;
       flex-direction: row;
