@@ -33,11 +33,11 @@ permalink: /mastodon/
     }
     .dummy-wrapper-text,
     .dummy-wrapper-timeline {
-      width: 50%;
-      max-width: 30rem;
-      height: calc(100% - 4rem);
-      padding: 0 1rem;
-    }
+        width: 100%;
+        /* max-width: 30rem; */
+        height: calc(100% - 4rem);
+        padding: 0 1rem;
+      }
     .dummy-wrapper-text h1,
     .dummy-wrapper-text h2,
     .dummy-wrapper-text p {
