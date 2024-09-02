@@ -5,6 +5,11 @@ permalink: /mastodon/
 ---
 
 <body>
+    <div id="mt-container" class="mt-container">
+          <div class="mt-body" role="feed">
+            <div class="mt-loading-spinner"></div>
+          </div>
+        </div>
     <script src="../assets/js/mastodon-timeline.js"></script>
     <script>
       const myTimeline = new MastodonTimeline({
