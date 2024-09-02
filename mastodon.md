@@ -91,8 +91,8 @@ permalink: /mastodon/
         userId: "109817623251702567",
         profileName: "@pyaephyohein",
         markdownBlockquote: true,
-        hideReplies: true
-        // maxNbPostFetch: "200",
+        hideReplies: true,
+        maxNbPostFetch: "200",
         maxNbPostShow: "200",
       });
     </script>
