@@ -111,12 +111,6 @@ text-decoration: underline;
   background-color: transparent;
   border-bottom: 1px solid var(--mt-color-line-gray);
 }
-.mt-post a {
-  color: lightgray;
-}
-.mt-post span {
-  color: lightgray;
-}
 .mt-post:hover,
 .mt-post:focus {
   cursor: pointer;

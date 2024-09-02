@@ -12,6 +12,10 @@ permalink: /mastodon/
     * {
       box-sizing: border-box;
     }
+    .page a{
+      padding-bottom: .05em;
+      transition: border 300ms linear;
+    }
     .dummy-main-container {
       display: flex;
       flex-direction: row;
@@ -51,6 +55,12 @@ permalink: /mastodon/
     .mt-post {
       font: normal normal 14px Open Sans, Verdana, sans-serif;
         font-size: 1.0rem;
+    }
+    .mt-post a {
+        color: gray;
+      }
+    .mt-post span {
+      color: gray;
     }
     .mt-post-preview-provider,
     .mt-post-preview-author {
