@@ -12,13 +12,22 @@ permalink: /mastodon/
     * {
       box-sizing: border-box;
     }
-    .link,.intro a,.navbar a,.post-link,.post a,.page a,.pagination .prev,.pagination .next,.site-footer a {
-    color: #0086B3;
+    .link {
+    color: $blue-color;
     padding-bottom: .05em;
-    -webkit-transition: border 300ms linear;
-    -moz-transition: border 300ms linear;
-    transition: border 300ms linear
-}
+    @include transition(border 300ms linear);
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 2px solid $blue-color;
+    }
+  }
+  .post-link {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $blue-color;
+    }
     .dummy-main-container {
       display: flex;
       flex-direction: row;
