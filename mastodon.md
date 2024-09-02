@@ -92,7 +92,7 @@ permalink: /mastodon/
         profileName: "@pyaephyohein",
         markdownBlockquote: true,
         hideReplies: true
-        maxNbPostFetch: "200",
+        // maxNbPostFetch: "200",
         maxNbPostShow: "200",
       });
     </script>
