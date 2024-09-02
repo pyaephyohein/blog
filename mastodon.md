@@ -5,7 +5,7 @@ permalink: /mastodon/
 ---
 
 <body>
-    <script src="./assets/js/mastodon-timeline.js"></script>
+    <script src="../assets/js/mastodon-timeline.js"></script>
     <script>
       const myTimeline = new MastodonTimeline({
         instanceUrl: "https://burma.social",
