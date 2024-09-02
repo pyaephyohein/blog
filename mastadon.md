@@ -1,13 +1,7 @@
 ---
 layout: mastadon
-title: Mastodon
+title: burma.social
 permalink: /mastadon/
 ---
 
-<body>
-    <div id="masto-embed" 
-          account_name="pyaephyohein"
-          host_url="https://burma.social">
-    </div>
-    <script src="../assets/js/dda-masto-embed.js"></script>
-</body>
+<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="1080" height="1920" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fburma.social%2Fusers%2Fpyaephyohein&theme=auto&size=100&header=false&replies=false&boosts=false"></iframe>
