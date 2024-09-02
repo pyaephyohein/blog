@@ -19,12 +19,15 @@ permalink: /mastodon/
     &:hover,
     &:focus,
     &:active 
-  }
-  .post-link {
-    &:hover,
-    &:focus,
-    &:active {
-      color: gray;
+    }
+    .post-link {
+      &:hover,
+      &:focus,
+      &:active {
+        color: gray;
+      }
+    .page a{
+      padding-bottom: .05em;
     }
     .dummy-main-container {
       display: flex;
