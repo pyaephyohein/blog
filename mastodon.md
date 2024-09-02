@@ -13,20 +13,18 @@ permalink: /mastodon/
       box-sizing: border-box;
     }
     .link {
-    color: $blue-color;
+    color: gray;
     padding-bottom: .05em;
     @include transition(border 300ms linear);
     &:hover,
     &:focus,
-    &:active {
-      border-bottom: 2px solid $blue-color;
-    }
+    &:active 
   }
   .post-link {
     &:hover,
     &:focus,
     &:active {
-      color: $blue-color;
+      color: gray;
     }
     .dummy-main-container {
       display: flex;
