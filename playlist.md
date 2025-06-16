@@ -1,5 +1,5 @@
 ---
-layout: plalist
+layout: playlist
 title: Ou's Playlists
 permalink: /playlist/
 ---
