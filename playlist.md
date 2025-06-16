@@ -3,33 +3,12 @@ layout: playlist
 title: Ou's Playlists
 permalink: /playlist/
 ---
-<style>
-.responsive-iframe {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-.responsive-iframe iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-</style>
 
+## 🎧 Ou's YouTube Music Playlist
 
-## 🎧 My Favorite Playlists
+[![Listen on YouTube Music](https://img.youtube.com/vi/YbJOTdZBX1g/default.jpg)](https://music.youtube.com/playlist?list=LRSRiIDhjRLKPDaYmoMfIe8C2ScfkdFczMJuR)
 
-### 🌙 Chill Night Vibes
-[![Chill](https://img.youtube.com/vi/abcd1234/default.jpg)](https://music.youtube.com/playlist?list=PLchillnight001)
-▶️ [Play in YouTube Music](https://music.youtube.com/playlist?list=PLchillnight001)
+▶️ [Play on YouTube Music](https://music.youtube.com/playlist?list=LRSRiIDhjRLKPDaYmoMfIe8C2ScfkdFczMJuR)
 
-<iframe width="100%" height="200" src="https://www.youtube.com/embed/videoseries?list=PLchillnight001&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> ℹ️ Embedding **YouTube Music** playlists isn't supported. You can still provide a thumbnail and direct link.
 
----
-
-### 🚗 Roadtrip Beats
-[![Roadtrip](https://img.youtube.com/vi/efgh5678/default.jpg)](https://music.youtube.com/playlist?list=PLroadtrip002)
-▶️ [Play in YouTube Music](https://music.youtube.com/playlist?list=PLroadtrip002)
-
-<iframe width="100%" height="200" src="https://www.youtube.com/embed/videoseries?list=PLroadtrip002&autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
