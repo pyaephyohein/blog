@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "How to Setup Time Zone in  Linux"
-comments: true
-description: "How to Setup Time Zone in Linux"
-keywords: "tech"
-author: Pyae Phyo Hein
+date: 2022-03-06 09:00:00 +0700
+tags: [Tech]
+reading_time: 3
+image: /assets/images/jekyll-banner.png
 ---
 
 ### Configure, disable ssh root login.

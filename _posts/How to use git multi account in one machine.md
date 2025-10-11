@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "How to use git multi account in one machine."
-comments: true
-description: "How to use git multi account in one machine."
-keywords: "git"
-author: Pyae Phyo Hein
+date: 2022-10-10 09:00:00 +0700
+tags: [Git]
+reading_time: 3
+image: /assets/images/jekyll-banner.png
 ---
 
 

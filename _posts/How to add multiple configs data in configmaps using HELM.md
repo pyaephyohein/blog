@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "How to add Multiple configs data in configmap using HELM."
-comments: true
-description: "How to add Multiple configs data in configmap using HELM."
-keywords: "helm,kubernetes,configmap,devops"
-author: Pyae Phyo Hein
+date: 2023-08-17 09:00:00 +0700
+tags: [Helm, Kubernetes, ConfigMap, DevOps]
+reading_time: 5
+image: /assets/images/jekyll-banner.png
 ---
 
 ### Create config folder for multiple configurations files

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "SSL Certificate with Let's Encrypt and Cert-Manager in K8s"
-comments: true
-description: "SSL Certificate with Let's Encrypt and Cert-Manager in K8s"
-keywords: "kubernetes, helm, let's Encrypt, SSL, Cert-Manager"
-author: Pyae Phyo Hein
+date: 2023-09-02 09:00:00 +0700
+tags: [Kubernetes, Helm, Let's Encrypt, SSL, Cert-Manager]
+reading_time: 5
+image: /assets/images/jekyll-banner.png
 ---
 
 ### Intro

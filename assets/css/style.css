@@ -116,3 +116,70 @@ body {
     background-color: #1a1d20;
     border-top: 1px solid var(--border-color);
 }
+
+/* === Post Content Styling === */
+
+.post-content h2, .post-content h3, .post-content h4 {
+    font-family: 'Fira Code', monospace;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.post-content p, .post-content li {
+    line-height: 1.8;
+    color: #ced4da; /* Lighter gray for better readability */
+}
+
+.post-content a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Blockquote Styling */
+.post-content blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* Code Block Styling */
+.post-content pre {
+    background-color: #1a1d20; /* Slightly different from card bg */
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    overflow-x: auto; /* For horizontal scrolling on long lines */
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+    color: #e9ecef;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Copy Button for Code Blocks */
+.btn-copy {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    opacity: 0.3;
+    transition: opacity 0.2s ease-in-out;
+}
+
+pre:hover .btn-copy {
+    opacity: 1;
+}

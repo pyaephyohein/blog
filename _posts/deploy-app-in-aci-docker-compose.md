@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Deploy App in ACI using Docker Compose"
-comments: true
-description: "Deploy App in ACI using Docker Compose"
-keywords: "docker, ACI, serverless, Azure"
-author: Pyae Phyo Hein
+date: 2023-09-18 09:00:00 +0700
+tags: [Docker, ACI, Serverless, Azure]
+reading_time: 4
+image: /assets/images/jekyll-banner.png
 ---
 
 Hello! Last week, We deployed Hello World app in ECS using Docker Compose [Read Here](https://blog.mgou.dev/2023/deploy-app-in-ecs-docker-compose/). This week, Let's deploy in ACI ( Azure Container Instance). 
@@ -77,4 +77,4 @@ docker compose down
 ***If you build docker image in mac ( M1, M2) please add -- platform ,```FROM --platform=linux/amd64 baseimage:tag```in ```Dockerfile```, If not you will face exec error.***
 
 
-Thanks you, Please like and share my page. 
+Thanks you, Please like and share my page.

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Why I use External DNS"
-comments: true
-description: "why I use external DNS"
-keywords: "kubernetes, helm, DNS, Route53, Cloudflare, Cloud Native"
-author: Pyae Phyo Hein
+date: 2023-08-20 09:00:00 +0700
+tags: [Kubernetes, Helm, DNS, Route53, Cloudflare, Cloud Native]
+reading_time: 5
+image: /assets/images/jekyll-banner.png
 ---
 
 ### Why I use External DNS

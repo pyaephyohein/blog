@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Nexus Repository Manager as Caching Docker Registry Proxies"
-comments: true
-description: "Nexus Repository Manager as Caching Docker Registry Proxies"
-keywords: "Nexus, Sonartype, K8s, Docker, DevOps"
-author: Pyae Phyo Hein
+date: 2024-04-13 09:00:00 +0700
+tags: [Nexus, Sonartype, K8s, Docker, DevOps]
+reading_time: 5
+image: /assets/images/jekyll-banner.png
 ---
 
 ဒီတစ်ခေါက်တော့ မြန်မာလို့ပဲ ရေးလိုက်တော့မယ်နော်။ ကျွန်တော် တို့  Docker hub ကနေ image တွေ pull မယ်ဆိုရင် [download rate limit](https://docs.docker.com/docker-hub/download-rate-limit/) ကြောင့် အဆင်မပြေတာမျိုး ကြုံဖူးကြမယ် ထင်ပါတယ် အဲ့ပြဿနာကို ဖြေရှင်းဖို့အတွက် ကျွန်တော်တို့က  Docker Hub user account ကို သုံးတာမျိုး, Docker Hub မှာ Subscription ဝယ်သုံးတာမျိုးလုပ်ကြပါတယ်. အဲ့နည်းလမ်းတွေ ကို မသုံးပဲ Docker Image တွေကို chache မှတ်ထားပြီး မှတ်ထားတဲ့ server ထဲကနေ နောင်ထပ်တစ်ခါ pull တဲ့ အခါ cache server ကနေပဲ pull အောင်လည်း လုပ်ကြပါတယ်။ အခု Post မှာတော့ Sonartype ရဲ့ Nexus Repository Manager ကို သုံးပြီး စမ်းကြည့်ကြပါမယ်။ ကျွန်တော် manual ကို docker နဲ့ ပဲ လုပ်ပြသွားပါမယ်, manual မြင်ပြီးဆိုရင်တော့ k8s မှာ Containerd ပဲ ဖြစ်ဖြစ် တစ်ခြား run time ပဲ ဖြစ်ဖြစ် စမ်းကြည့်ပြီး automation တစ်ခုခုကို သုံးပြီးတော့လည်း Integration စမ်းကြည့်ကြည့်လို့ရပါတယ် 

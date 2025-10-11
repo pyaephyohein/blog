@@ -1,16 +1,76 @@
 ---
 layout: default
 ---
+<article class="post-content">
+    <header class="post-header mb-4">
+        <h1 class="post-title display-5 fw-bold">{{ page.title | escape }}</h1>
+        <div class="post-meta text-white-50 small my-3">
+            <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+            {% if page.reading_time %}
+                <span>&middot; {{ page.reading_time }} min read</span>
+            {% endif %}
+        </div>
+        <div class="post-tags">
+            {% for tag in page.tags %}
+                <span class="post-tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </header>
 
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-    {% include post-share.html %}
-  </div>
+    <hr class="my-4 border-secondary">
+
+    <div class="post-body">
+        {{ content }}
+    </div>
+
 </article>
 
-{% include comments.html %}
+<!-- Previous/Next Post Navigation -->
+<nav class="post-nav d-flex justify-content-between mt-5">
+    <div>
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Previous
+        </a>
+        {% endif %}
+    </div>
+    <div>
+        {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-secondary">
+            Next <i class="bi bi-arrow-right"></i>
+        </a>
+        {% endif %}
+    </div>
+</nav>
+
+<!-- JavaScript for Copy Button on Code Blocks -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const highlightBlocks = document.querySelectorAll('.post-body pre');
+    highlightBlocks.forEach(block => {
+        // We only want to add copy buttons to blocks that contain a code element
+        if (block.querySelector('code')) {
+            block.style.position = 'relative';
+
+            const copyButton = document.createElement('button');
+            copyButton.className = 'btn btn-sm btn-outline-secondary btn-copy';
+            copyButton.innerHTML = '<i class="bi bi-clipboard"></i>';
+            copyButton.setAttribute('aria-label', 'Copy code to clipboard');
+            
+            block.appendChild(copyButton);
+
+            copyButton.addEventListener('click', () => {
+                const code = block.querySelector('code').innerText;
+                navigator.clipboard.writeText(code).then(() => {
+                    copyButton.innerHTML = '<i class="bi bi-check-lg"></i>';
+                    copyButton.classList.add('btn-success');
+                    setTimeout(() => {
+                        copyButton.innerHTML = '<i class="bi bi-clipboard"></i>';
+                        copyButton.classList.remove('btn-success');
+                    }, 2000);
+                });
+            });
+        }
+    });
+});
+</script>

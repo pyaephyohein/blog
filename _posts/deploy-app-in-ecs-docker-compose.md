@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Deploy App in ECS using Docker Compose"
-comments: true
-description: "Deploy App in ECS using Docker Compose"
-keywords: "docker, ecs, serverless"
-author: Pyae Phyo Hein
+date: 2023-09-06 09:00:00 +0700
+tags: [Docker, ECS, Serverless]
+reading_time: 5
+image: /assets/images/jekyll-banner.png
 ---
 
 Hello, One Week again!, Let's Deploy App in ECS. If you want to test your app or you don't want to deploy EC2, you can use ECS with Docker Compose. So you need IAM key and secret. 
@@ -105,4 +105,4 @@ If Above command is too slow, you can delete in aws console :3 ***don't stop doc
 ***If you build docker image in mac ( M1, M2) please add -- platform ,```FROM --platform=linux/amd64 baseimage:tag```in ```Dockerfile```, If not you will face exec error.***
 
 
-Thanks you, Please like and share my page. 
+Thanks you, Please like and share my page.
