@@ -1,8 +1,85 @@
-{% if site.postshare_enabled %}
-<aside class="share">
+---
+layout: default
+---
+<div class="row justify-content-center">
+    <div class="col-lg-9">
 
-  <p>If you liked this article and think others should read it, please share it on <a href="http://twitter.com/share?text={{page.title}}&amp;url={{ page.url | prepend: site.baseurl | prepend: site.url }}&amp;via={{ site.twitter_username }}"
-  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.</p>
+        <article class="post-content">
+            <header class="post-header text-center mb-4">
+                <div class="post-meta mb-2">
+                    <span class="text-white-50">{{ page.date | date: "%b %-d, %Y" }}</span>
+                    {% if page.reading_time %}
+                        <span class="text-white-50">&middot; {{ page.reading_time }} min read</span>
+                    {% endif %}
+                </div>
+                <h1 class="post-title display-4 fw-bold">{{ page.title | escape }}</h1>
+                <div class="post-tags mt-3">
+                    {% for tag in page.tags %}
+                        <span class="post-tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </header>
 
-</aside>
-{% endif %}
+            <div class="post-banner my-5">
+                {% if page.image %}
+                    <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title | escape }}">
+                {% else %}
+                    <img src="{{ '/assets/images/default-banner.png' | relative_url }}" class="img-fluid rounded shadow-lg" alt="Default Blog Banner">
+                {% endif %}
+            </div>
+
+            <div class="post-body">
+                {{ content }}
+            </div>
+
+        </article>
+
+        <!-- Previous/Next Post Navigation -->
+        <nav class="post-nav d-flex justify-content-between mt-5 pt-4 border-top border-secondary">
+            <div>
+                {% if page.previous.url %}
+                <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Previous Post
+                </a>
+                {% endif %}
+            </div>
+            <div>
+                {% if page.next.url %}
+                <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-secondary">
+                    Next Post <i class="bi bi-arrow-right"></i>
+                </a>
+                {% endif %}
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+
+<!-- JavaScript for Copy Button on Code Blocks -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const highlightBlocks = document.querySelectorAll('.post-body pre');
+    highlightBlocks.forEach(block => {
+        if (block.querySelector('code')) {
+            block.style.position = 'relative';
+            const copyButton = document.createElement('button');
+            copyButton.className = 'btn btn-sm btn-outline-secondary btn-copy';
+            copyButton.innerHTML = '<i class="bi bi-clipboard"></i>';
+            copyButton.setAttribute('aria-label', 'Copy code to clipboard');
+            block.appendChild(copyButton);
+            copyButton.addEventListener('click', () => {
+                const code = block.querySelector('code').innerText;
+                navigator.clipboard.writeText(code).then(() => {
+                    copyButton.innerHTML = '<i class="bi bi-check-lg"></i>';
+                    copyButton.classList.add('btn-success');
+                    setTimeout(() => {
+                        copyButton.innerHTML = '<i class="bi bi-clipboard"></i>';
+                        copyButton.classList.remove('btn-success');
+                    }, 2000);
+                });
+            });
+        }
+    });
+});
+</script>

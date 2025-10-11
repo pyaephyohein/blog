@@ -1,15 +1,21 @@
-<div class="sidebar-widget mb-4">
+<!-- Search Widget -->
+<div id="search-container" class="sidebar-widget mb-4">
     <h3 class="sidebar-title">Search</h3>
     <div class="input-group">
-        <input type="text" class="form-control form-control-dark" placeholder="Search articles...">
+        <input type="text" id="search-input" class="form-control form-control-dark" placeholder="Search articles...">
         <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
     </div>
+    <ul id="results-container" class="list-group mt-2"></ul>
 </div>
+
+<!-- Tags Widget -->
 <div class="sidebar-widget">
-    <h3 class="sidebar-title">Topics</h3>
-    <a href="#" class="topic-link">Cloud Computing</a>
-    <a href="#" class="topic-link">Databases</a>
-    <a href="#" class="topic-link">Frontend Frameworks</a>
-    <a href="#" class="topic-link">Machine Learning</a>
-    <a href="#" class="topic-link">Security</a>
+    <h3 class="sidebar-title">Tags</h3>
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+        <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/" class="topic-link d-flex justify-content-between align-items-center">
+            <span>#{{ tag[0] }}</span>
+            <span class="badge bg-secondary rounded-pill">{{ tag[1].size }}</span>
+        </a>
+    {% endfor %}
 </div>

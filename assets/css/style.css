@@ -183,3 +183,75 @@ body {
 pre:hover .btn-copy {
     opacity: 1;
 }
+
+/* === Focused Post Page Layout Additions === */
+
+.post-header .post-meta {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.post-header .post-title {
+    line-height: 1.2;
+}
+
+.post-banner img.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.5) !important;
+}
+
+.post-body {
+    font-size: 1.1rem; /* Slightly larger for easier reading */
+    color: #e9ecef; /* Lighter text color */
+}
+
+.post-body p, .post-body li {
+    line-height: 1.9;
+}
+
+.post-body img {
+    border: 1px solid var(--border-color);
+}
+
+
+/* === Make Post Card Clickable === */
+
+.card {
+    /* This is REQUIRED for the stretched-link to work */
+    position: relative; 
+}
+
+/* Style the link inside the card title */
+.card .card-title a.stretched-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Ensure the title text still turns the accent color on hover */
+.card:hover .card-title a.stretched-link {
+    color: var(--accent-color);
+}
+
+/* The stretched-link utility creates a pseudo-element to cover the card.
+   This makes sure it's invisible but functional. */
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+/* Search Results Styling */
+#results-container .list-group-item {
+    border-color: var(--border-color);
+}
+#results-container .list-group-item a {
+    text-decoration: none;
+    font-weight: 500;
+}
+#results-container .list-group-item a:hover {
+    color: var(--accent-color) !important;
+}

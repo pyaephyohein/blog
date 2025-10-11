@@ -35,6 +35,8 @@ plugins:
   - bourbon
   - jekyll-paginate
   - jekyll-admin
+  - jekyll-archives
+
 
 # navbar pages
 navbar:
@@ -62,3 +64,10 @@ exclude:
   - "script"
   - "vendor"
   - "thinkspace.gemspec"
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tag_archive
+  permalinks:
+    tag: '/tags/:name/'
