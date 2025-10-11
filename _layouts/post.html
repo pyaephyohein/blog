@@ -2,22 +2,29 @@
 layout: default
 ---
 <article class="post-content">
-    <header class="post-header mb-4">
-        <h1 class="post-title display-5 fw-bold">{{ page.title | escape }}</h1>
-        <div class="post-meta text-white-50 small my-3">
-            <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+    <header class="post-header text-center mb-4">
+        <div class="post-meta mb-2">
+            <span class="text-white-50">{{ page.date | date: "%b %-d, %Y" }}</span>
             {% if page.reading_time %}
-                <span>&middot; {{ page.reading_time }} min read</span>
+                <span class="text-white-50">&middot; {{ page.reading_time }} min read</span>
             {% endif %}
         </div>
-        <div class="post-tags">
+        <h1 class="post-title display-4 fw-bold">{{ page.title | escape }}</h1>
+        <div class="post-tags mt-3">
             {% for tag in page.tags %}
+                <!-- Note: These tags are now just visual labels, not links -->
                 <span class="post-tag">{{ tag }}</span>
             {% endfor %}
         </div>
     </header>
 
-    <hr class="my-4 border-secondary">
+    <div class="post-banner my-5">
+        {% if page.image %}
+            <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-lg" alt="{{ page.title | escape }}">
+        {% else %}
+            <img src="{{ '/assets/images/default-banner.png' | relative_url }}" class="img-fluid rounded shadow-lg" alt="Default Blog Banner">
+        {% endif %}
+    </div>
 
     <div class="post-body">
         {{ content }}
@@ -26,39 +33,35 @@ layout: default
 </article>
 
 <!-- Previous/Next Post Navigation -->
-<nav class="post-nav d-flex justify-content-between mt-5">
+<nav class="post-nav d-flex justify-content-between mt-5 pt-4 border-top border-secondary">
     <div>
         {% if page.previous.url %}
         <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-secondary">
-            <i class="bi bi-arrow-left"></i> Previous
+            <i class="bi bi-arrow-left"></i> Previous Post
         </a>
         {% endif %}
     </div>
     <div>
         {% if page.next.url %}
         <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-secondary">
-            Next <i class="bi bi-arrow-right"></i>
+            Next Post <i class="bi bi-arrow-right"></i>
         </a>
         {% endif %}
     </div>
 </nav>
 
-<!-- JavaScript for Copy Button on Code Blocks -->
+<!-- JavaScript for Copy Button is now in post.html -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const highlightBlocks = document.querySelectorAll('.post-body pre');
     highlightBlocks.forEach(block => {
-        // We only want to add copy buttons to blocks that contain a code element
         if (block.querySelector('code')) {
             block.style.position = 'relative';
-
             const copyButton = document.createElement('button');
             copyButton.className = 'btn btn-sm btn-outline-secondary btn-copy';
             copyButton.innerHTML = '<i class="bi bi-clipboard"></i>';
             copyButton.setAttribute('aria-label', 'Copy code to clipboard');
-            
             block.appendChild(copyButton);
-
             copyButton.addEventListener('click', () => {
                 const code = block.querySelector('code').innerText;
                 navigator.clipboard.writeText(code).then(() => {
