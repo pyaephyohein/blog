@@ -43,7 +43,7 @@ navbar:
   - slug : about
     title: About
   - slug : blog
-    title: Ou's
+    title: Blog
 
 exclude:
   - "gulp"
