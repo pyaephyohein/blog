@@ -1,0 +1,118 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --accent-color: #00BFFF; /* Deep Sky Blue */
+    --card-bg: #2c3034;
+    --body-bg: #212529;
+    --border-color: #444;
+    --text-muted: #adb5bd;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-bg);
+}
+
+/* Navbar with accent border */
+.navbar {
+    background-color: rgba(33, 37, 41, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    color: var(--accent-color) !important;
+}
+
+/* Blog Post Card Styling */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    border-radius: 0.75rem; /* Slightly more rounded */
+    overflow: hidden; /* Ensures image corners are rounded */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.15);
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-title a:hover {
+    color: var(--accent-color);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-tag {
+    display: inline-block;
+    background-color: rgba(0, 191, 255, 0.1);
+    color: var(--accent-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 50rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 191, 255, 0.2);
+}
+
+/* Sidebar Styling */
+.sidebar-widget {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.sidebar-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.topic-link {
+    display: block;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: color 0.2s ease;
+}
+
+.topic-link:last-child {
+    border-bottom: none;
+}
+
+.topic-link:hover {
+    color: var(--accent-color);
+}
+
+.form-control-dark {
+    background-color: #343a40;
+    border-color: var(--border-color);
+}
+
+.form-control-dark:focus {
+     background-color: #343a40;
+     border-color: var(--accent-color);
+     box-shadow: 0 0 0 0.25rem rgba(0, 191, 255, 0.25);
+}
+
+.footer {
+    background-color: #1a1d20;
+    border-top: 1px solid var(--border-color);
+}
