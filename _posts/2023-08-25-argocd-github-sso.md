@@ -4,7 +4,7 @@ title: "Argo-CD login integration with github SSO"
 date: 2023-08-25 09:00:00 +0700
 tags: [Kubernetes, Helm, Argo-CD, Git Hub, Cloud Native, SSO]
 reading_time: 5
-image: /assets/images/jekyll-banner.png
+image: /assets/images/argocdsso/argocd-logo.png
 ---
 ### Introduction
 ဒီတစ်ပတ်တော့ မြန်မာလိုပဲ​ရေးလိုက်တော့မယ်နော်။ ဒီဟာကို တော့ organization အကြီး တွေမှာတော့ သုံးလေ့သုံးထ ရှိမရှိတော့မသိပါဘူး သူတို့မှာက LDAP လို ဟာတွေ ရှိနေတော့ LDAP မဟုတ်ရင် တစ်ခြား တစ်ခုခုသုံးကြပါလိမ့်မယ်။ အခုတော့ GITHUB ရဲ့  SSO ပဲ​ခေါ်မလား OAuth App ပဲ​ခေါ်မလား တစ်ခုခုပေါ့လေ အဲ့တာနဲ့ Argo-CD ကို ဘယ်လို လုပ်ရမလဲဆိုတာ ကို စမ်းကြည့်ကြည့်ပါမယ်။ အဲ့တော့ ပထမဆုံး Github မှာ OAuth app တစ်ခု လုပ်ရမှာပေါ့. ကျွန်တော်တို့က Personal မဟုတ်ပဲ Team အနေနဲ့ ပဲ ဆိုတော့ Github's Organization မှာပဲ လုပ်ကြည့်ကြပါမယ်။ အဲ့ဒိတော့ Github Organization တစ်ခုနဲ့ သက်ဆိုင်ရာ Team တွေ ရှိပြီးသားလို့ ယူဆလိုက်ပါမယ် ကိုယ်ဟာကိုယ်ပဲ သွားလုပ်လိုက်ကြပေါ့ လေ အဲ့ကိစ္စတွေ လုပ်ပြနေရင် အများကြီးရေးရမှာမို့ပျင်းလို့ မရေးတော့ဘူးနော်:3. 

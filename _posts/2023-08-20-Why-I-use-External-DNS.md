@@ -4,7 +4,7 @@ title: "Why I use External DNS"
 date: 2023-08-20 09:00:00 +0700
 tags: [Kubernetes, Helm, DNS, Route53, Cloudflare, Cloud Native]
 reading_time: 5
-image: /assets/images/jekyll-banner.png
+image: /assets/images/external-dns.png
 ---
 
 ### Why I use External DNS
