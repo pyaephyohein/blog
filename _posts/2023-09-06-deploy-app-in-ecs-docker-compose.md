@@ -4,7 +4,7 @@ title: "Deploy App in ECS using Docker Compose"
 date: 2023-09-06 09:00:00 +0700
 tags: [Docker, ECS, Serverless]
 reading_time: 5
-image: //assets/images/ecs-dockercompose/dockerecs.jpg
+image: /assets/images/ecs-dockercompose/dockerecs.jpg
 ---
 
 Hello, One Week again!, Let's Deploy App in ECS. If you want to test your app or you don't want to deploy EC2, you can use ECS with Docker Compose. So you need IAM key and secret. 
