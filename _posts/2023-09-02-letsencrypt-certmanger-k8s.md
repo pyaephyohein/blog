@@ -10,7 +10,6 @@ image: /assets/images/letencrypt-certmgr/cert_let.png
 ### Intro
 ဒီတစ်ပတ်မှာတော့ let's encrypt နဲ့ cert-manager ကို တွဲသုံးပြီး ဘယ်လိုမျိုး SSL သုံးလို့ ရမလဲဆိုတာ စမ်းကြည့်ကြမယ်ဗျို့။ ပုံမှန်ဆိုရင် Self-signed certificate ကို သုံးတတ်ကြပေမဲ့ certificate ထုတ်ရတာ ပျင်းတာပဲ ဖြစ်ဖြစ် ဒီတိုင်း စမ်းကြည့်ချင်တာပဲ ဖြစ်ဖြစ် organization က သုံးချင်တာပဲ ဖြစ်ဖြစ် lets encrypt ကို clusterissure အဖြစ် သုံးပြီး certificate request ပြီးသုံးကြတယ်ပေါ့။
 
-<img src="/assets/images/letencrypt-certmgr/cert_let.png">
 
 ### Deploy Cert-manager
 အဲ့တော့ ပထမဆုံး ကျွန်တော်တို့ Cert-manager deployment လုပ်ကြမယ်။ Cert-manager ကိုတော့ helm သုံးပြီး deploy လုပ်ကြပါမယ်။

@@ -11,7 +11,6 @@ Hello, One Week again!, Let's Deploy App in ECS. If you want to test your app or
 
 ***Docker Compose's integration for ECS and ACI will be retired in November 2023. You can use [compose-ecs](https://github.com/docker/compose-ecs)but I will use docker compose for now***
 
-<img src="/assets/images/ecs-dockercompose/dockerecs.jpg">
 
 #### Prepare Docker context
 

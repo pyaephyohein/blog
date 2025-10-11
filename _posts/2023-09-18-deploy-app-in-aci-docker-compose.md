@@ -9,7 +9,6 @@ image: /assets/images/aci-dockercompose/aci_docker.png
 
 Hello! Last week, We deployed Hello World app in ECS using Docker Compose [Read Here](https://blog.mgou.dev/2023/deploy-app-in-ecs-docker-compose/). This week, Let's deploy in ACI ( Azure Container Instance). 
 
-<img src="/assets/images/aci-dockercompose/aci_docker.png">
 #### Prepare Docker context
 All are the same with ECS only need to login using 
 ```bash 
