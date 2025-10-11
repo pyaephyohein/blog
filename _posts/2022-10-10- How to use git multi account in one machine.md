@@ -4,7 +4,7 @@ title: "How to use git multi account in one machine."
 date: 2022-10-10 09:00:00 +0700
 tags: [Git]
 reading_time: 3
-image: /assets/images/jekyll-banner.png
+image: /assets/images/default-banner.png
 ---
 
 

@@ -212,16 +212,19 @@ pre:hover .btn-copy {
 /* === Images Inside Post Content === */
 
 .post-body img {
-    max-width: 100%; /* THIS IS THE KEY FIX: Ensures image never exceeds the width of its container */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 0.5rem; /* Softly rounded corners */
-    margin-top: 1.5rem; /* Space above the image */
-    margin-bottom: 1.5rem; /* Space below the image */
-    display: block; /* Helps with margin centering */
+    /* These !important rules will override inline width/height attributes */
+    width: 100% !important;
+    max-width: 100% !important; 
+    
+    height: auto !important; /* Maintains the aspect ratio */
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid var(--border-color); /* Subtle border */
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3); /* Soft shadow for depth */
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
 }
 
 
