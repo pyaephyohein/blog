@@ -270,3 +270,27 @@ pre:hover .btn-copy {
 #results-container .list-group-item a:hover {
     color: var(--accent-color) !important;
 }
+
+
+/* ... existing styles ... */
+
+/* === Instagram Embed Adjustments === */
+
+/* Target the Instagram media block to center it within the post body */
+.post-body .instagram-media {
+    margin: 2rem auto !important; /* Centers the embed and adds vertical spacing */
+    background-color: #ffffff; /* Keeps the white background for contrast/readability of the embed itself */
+    border-radius: 0.75rem !important; /* Matches your card and image radius */
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.4) !important; /* Adds a shadow to separate it from the dark background */
+}
+
+/* Ensure the embed is responsive on very small screens */
+@media (max-width: 576px) {
+    .post-body .instagram-media {
+        min-width: 100% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
