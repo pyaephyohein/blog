@@ -1,18 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title_left | escape }}</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Site Brand -->
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            {{ site.title_left | default: "mgou.dev" | escape }}
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navigation Links consolidated into a single list -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="{{ '/' | relative_url }}">Home</a> </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="{{ '/tech' | relative_url }}">Tech</a> </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="{{ '/travel' | relative_url }}">Travel</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/tech' %}active{% endif %}" href="{{ '/tech' | relative_url }}">Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/travel' %}active{% endif %}" href="{{ '/travel' | relative_url }}">Travel</a>
+                </li>
             </ul>
         </div>
     </div>
