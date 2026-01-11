@@ -2,6 +2,7 @@
 layout: post
 title: "n8n ဆိုတာဘာကြီးလဲ? Workflow Automation ကို ကိုယ်တိုင် Host လုပ်ကြမယ်"
 date: 2025-10-12 11:13:29 +0700
+categories: tech
 tags: [n8n, Workflow, Automation, AI Agent, OpenAI, IFTTT, Zapier, OpenSource, Self-Hosted, Burmese]
 reading_time: 9
 image: https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png

@@ -2,6 +2,7 @@
 layout: post
 title: "Deploy App in ECS using Docker Compose"
 date: 2023-09-06 09:00:00 +0700
+categories: tech
 tags: [Docker, ECS, Serverless]
 reading_time: 5
 image: /assets/images/ecs-dockercompose/dockerecs.jpg

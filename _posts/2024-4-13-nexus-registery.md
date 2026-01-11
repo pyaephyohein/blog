@@ -2,6 +2,7 @@
 layout: post
 title: "Nexus Repository Manager as Caching Docker Registry Proxies"
 date: 2024-04-13 09:00:00 +0700
+categories: tech
 tags: [Nexus, Sonartype, K8s, Docker, DevOps]
 reading_time: 5
 image: /assets/images/nexus-repo-mgr/logo.png

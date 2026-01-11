@@ -2,6 +2,7 @@
 layout: post
 title: "Deploy App in ACI using Docker Compose"
 date: 2023-09-18 09:00:00 +0700
+categories: tech
 tags: [Docker, ACI, Serverless, Azure]
 reading_time: 4
 image: /assets/images/aci-dockercompose/aci_docker.png

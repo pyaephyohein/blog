@@ -2,6 +2,7 @@
 layout: post
 title: "How to add Multiple configs data in configmap using HELM."
 date: 2023-08-17 09:00:00 +0700
+categories: tech
 tags: [Helm, Kubernetes, ConfigMap, DevOps]
 reading_time: 5
 image: /assets/images/default-banner.png

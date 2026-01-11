@@ -2,6 +2,7 @@
 layout: post
 title: "Why I use External DNS"
 date: 2023-08-20 09:00:00 +0700
+categories: tech
 tags: [Kubernetes, Helm, DNS, Route53, Cloudflare, Cloud Native]
 reading_time: 5
 image: /assets/images/external-dns.png

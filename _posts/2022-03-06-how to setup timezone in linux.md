@@ -2,6 +2,7 @@
 layout: post
 title: "How to Setup Time Zone in  Linux"
 date: 2022-03-06 09:00:00 +0700
+categories: tech
 tags: [Tech]
 reading_time: 3
 image: /assets/images/default-banner.png

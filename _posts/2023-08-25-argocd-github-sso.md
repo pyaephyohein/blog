@@ -2,6 +2,7 @@
 layout: post
 title: "Argo-CD login integration with github SSO"
 date: 2023-08-25 09:00:00 +0700
+categories: tech
 tags: [Kubernetes, Helm, Argo-CD, Git Hub, Cloud Native, SSO]
 reading_time: 5
 image: /assets/images/argocdsso/argocd-logo.png

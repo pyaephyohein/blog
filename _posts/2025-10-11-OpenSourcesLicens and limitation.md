@@ -2,6 +2,7 @@
 layout: post
 title: "တချို့ Open-Source License တွေကို ဘာလို့ တချို့ Company ကြီးတွေမှာ အသုံးပြုခွင့်မပေးတာလဲ"
 date: 2025-10-11 15:05:12 +0700
+categories: tech
 tags: [OpenSource, License, Tech, Burmese]
 reading_time: 6
 image: /assets/images/default-banner.png

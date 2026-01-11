@@ -2,6 +2,7 @@
 layout: post
 title: "SSL Certificate with Let's Encrypt and Cert-Manager in K8s"
 date: 2023-09-02 09:00:00 +0700
+categories: tech
 tags: [Kubernetes, Helm, Let's Encrypt, SSL, Cert-Manager]
 reading_time: 5
 image: /assets/images/letencrypt-certmgr/cert_let.png
