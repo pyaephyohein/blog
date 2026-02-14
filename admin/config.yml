@@ -5,6 +5,8 @@ backend:
   base_url: https://blog-auth.mgou.dev
   auth_endpoint: /auth
   display_url: https://blog.mgou.dev
+  
+publish_mode: editorial_workflow
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
