@@ -1,7 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: pyaephyohein/blog # Updated based on git remote
   branch: main
-  
+  base_url: https://blog-auth.mgou.dev
+  auth_endpoint: /auth
+  display_url: https://blog.mgou.dev
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
