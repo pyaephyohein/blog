@@ -4,10 +4,8 @@ backend:
   branch: main
   base_url: https://blog-auth.pyaephyohein-info-3326.workers.dev
   auth_endpoint: auth
-  site_domain: blog.mgou.dev
   display_url: https://blog.mgou.dev
-
-# Remove public_folder if not needed, or verify its correctness
+  
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
@@ -21,7 +19,10 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      
+      # Changed to list widget for better UX
+      - {label: "Categories", name: "categories", widget: "list", required: false} 
+      
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Cover Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
