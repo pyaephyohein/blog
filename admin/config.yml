@@ -4,6 +4,10 @@ backend:
   branch: main
   base_url: https://blog-auth.pyaephyohein-info-3326.workers.dev
   auth_endpoint: auth
+  site_domain: blog.mgou.dev
+  display_url: https://blog.mgou.dev
+  # Optional: API endpoint if using GitHub Enterprise
+  # api_root: https://api.github.com
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
