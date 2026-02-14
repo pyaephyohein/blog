@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: pyaephyohein/blog
+  name: git-gateway
   branch: main
-  base_url: https://blog-auth.pyaephyohein-info-3326.workers.dev
-  auth_endpoint: auth
-  display_url: https://blog.mgou.dev
   
 media_folder: "assets/images"
 public_folder: "/assets/images"
