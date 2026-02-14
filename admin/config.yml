@@ -7,6 +7,9 @@ backend:
   display_url: https://blog.mgou.dev
   
 publish_mode: editorial_workflow
+site_url: https://blog.mgou.dev
+logo_url: https://blog.mgou.dev/assets/images/logo.png # Optional, update if logo exists
+
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
@@ -16,10 +19,15 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    delete: true
+    summary: "{{title}} - {{date}}"
+    sortable_fields: ["commit_date", "title", "date", "author"]
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
       
       # Changed to list widget for better UX
       - {label: "Categories", name: "categories", widget: "list", required: false} 
